@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情感专栏 - 校园恋爱指南</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* 为主要内容区域添加内边距 */
+        .consultation-card,
+        .topic-card,
+        .experience-card {
+            padding: 20px;
+        }
+
+        /* 为咨询详情添加适当的间距 */
+        .consultation-details {
+            padding: 15px 0;
+        }
+
+        /* 为热门话题卡片内容添加间距 */
+        .topic-card h3 {
+            padding-bottom: 10px;
+        }
+
+        /* 为经验分享卡片内容添加间距 */
+        .experience-card .excerpt {
+            padding: 10px 0;
+        }
+
+        /* 为作者信息添加间距 */
+        .experience-card .author {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>情感专栏 <i class="fas fa-heart"></i></h1>
+            <p class="subtitle">倾听你的心声，解答你的困惑</p>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="love-experience.html"><i class="fas fa-book-open"></i> 恋爱经验</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 情感咨询板块 -->
+        <section class="emotion-consultation">
+            <h2><i class="fas fa-comments"></i> 情感咨询</h2>
+            <div class="consultation-grid">
+                <article class="consultation-card">
+                    <div class="consultant-info">
+                        <h3>李老师</h3>
+                        <p class="credentials">情感咨询师 | 10年经验</p>
+                    </div>
+                    <div class="consultation-details">
+                        <p>专注于校园情感问题解答，帮助学生处理恋爱困惑。</p>
+                        <button class="consult-btn"><i class="fas fa-paper-plane"></i> 立即咨询</button>
+                    </div>
+                </article>
+                
+                <article class="consultation-card">
+                    <div class="consultant-info">
+                        <h3>张老师</h3>
+                        <p class="credentials">心理咨询师 | 8年经验</p>
+                    </div>
+                    <div class="consultation-details">
+                        <p>擅长处理恋爱心理问题，提供专业的心理疏导。</p>
+                        <button class="consult-btn"><i class="fas fa-paper-plane"></i> 立即咨询</button>
+                    </div>
+                </article>
+
+                <article class="consultation-card">
+                    <div class="consultant-info">
+                        <h3>王老师</h3>
+                        <p class="credentials">婚恋顾问 | 12年经验</p>
+                    </div>
+                    <div class="consultation-details">
+                        <p>专注于情感修复与关系重建，帮助情侣解决沟通障碍。</p>
+                        <button class="consult-btn"><i class="fas fa-paper-plane"></i> 立即咨询</button>
+                    </div>
+                </article>
+
+                <article class="consultation-card">
+                    <div class="consultant-info">
+                        <h3>陈老师</h3>
+                        <p class="credentials">情感教练 | 15年经验</p>
+                    </div>
+                    <div class="consultation-details">
+                        <p>擅长处理校园暗恋、表白技巧等青春期情感问题。</p>
+                        <button class="consult-btn"><i class="fas fa-paper-plane"></i> 立即咨询</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 热门话题讨论 -->
+        <section class="hot-topics">
+            <h2><i class="fas fa-fire"></i> 热门话题</h2>
+            <div class="topics-container">
+                <article class="topic-card">
+                    <h3>异地恋如何维持感情？</h3>
+                    <p class="topic-meta">
+                        <span><i class="fas fa-comment"></i> 128条评论</span>
+                        <span><i class="fas fa-heart"></i> 356点赞</span>
+                    </p>
+                    <a class="join-discussion">参与讨论</a>
+                </article>
+
+                <article class="topic-card">
+                    <h3>如何处理学习与恋爱的平衡？</h3>
+                    <p class="topic-meta">
+                        <span><i class="fas fa-comment"></i> 89条评论</span>
+                        <span><i class="fas fa-heart"></i> 245点赞</span>
+                    </p>
+                    <a class="join-discussion">参与讨论</a>
+                </article>
+
+                <article class="topic-card">
+                    <h3>暗恋该不该表白？</h3>
+                    <p class="topic-meta">
+                        <span><i class="fas fa-comment"></i> 156条评论</span>
+                        <span><i class="fas fa-heart"></i> 423点赞</span>
+                    </p>
+                    <a class="join-discussion">参与讨论</a>
+                </article>
+
+                <article class="topic-card">
+                    <h3>如何应对校园八卦与流言？</h3>
+                    <p class="topic-meta">
+                        <span><i class="fas fa-comment"></i> 92条评论</span>
+                        <span><i class="fas fa-heart"></i> 278点赞</span>
+                    </p>
+                    <a class="join-discussion">参与讨论</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- 新增经验分享板块 -->
+        <section class="experience-sharing">
+            <h2><i class="fas fa-lightbulb"></i> 情感经验分享</h2>
+            <div class="experience-grid">
+                <article class="experience-card">
+                    <img alt="经验分享配图">
+                    <h3>我的异地恋故事：距离不是问题</h3>
+                    <p class="author">作者：小美 | 阅读量：2.3k</p>
+                    <p class="excerpt">在这篇文章中，我将分享我们是如何跨越800公里的距离，维持甜蜜恋情的...</p>
+                    <a href="#" class="read-more">阅读全文</a>
+                </article>
+
+                <article class="experience-card">
+                    <img alt="经验分享配图">
+                    <h3>从暗恋到牵手：我的表白成功经验</h3>
+                    <p class="author">作者：小张 | 阅读量：1.8k</p>
+                    <p class="excerpt">想知道如何把握表白的最佳时机吗？让我来分享我的成功经验...</p>
+                    <a class="read-more">阅读全文</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>校园恋爱指南 © 2024</p>
+            <div class="social-links">
+                <a><i class="fab fa-weixin"></i></a>
+                <a><i class="fab fa-weibo"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
